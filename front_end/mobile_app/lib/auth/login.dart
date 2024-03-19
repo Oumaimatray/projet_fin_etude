@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile_app/auth/forgotPassword.dart';
 import 'package:mobile_app/components/textfield.dart';
 
+import 'package:mobile_app/homePage.dart';
+
 // ignore: unused_import
 import 'package:http/http.dart' as http;
 // ignore: unused_import
@@ -163,12 +165,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                   child: InkWell(
                                     onTap: () {
                                       Login();
-                                      //Navigator.push(
-                                      // context,
-                                      //MaterialPageRoute(
-                                      // builder: (context) => HomePage(),
-                                      // ),
-                                      // );
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => HomePage(),
+                                        ),
+                                      );
                                     },
                                     child: Text(
                                       'LOGIN',

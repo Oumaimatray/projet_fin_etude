@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mobile_app/chat/page9.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -169,12 +170,13 @@ class _HomePageState extends State<HomePage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(10),
                             onTap: () {
-                              // Navigator.push(
-                              // context,
-                              //MaterialPageRoute(
-                              //builder: (context) => Chat(),
-                              //),
-                              // );
+                              Navigator.of(context).pop();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Chat(),
+                                ),
+                              );
                             },
                             child: Container(
                               width: 60,
