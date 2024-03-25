@@ -222,12 +222,12 @@ class _HomePageState extends State<HomePage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(10),
                             onTap: () {
-                              //Navigator.push(
-                              // context,
-                              //MaterialPageRoute(
-                              // builder: (context) => CalendarHome(),
-                              // ),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => CalendarHome(),
+                                ),
+                              );
                             },
                             child: Container(
                               width: 60,
